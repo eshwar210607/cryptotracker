@@ -1,15 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRYPTOCURRENCY DASHBOARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="homepage.css">
     <script type="module" src="./homepage.js"></script>
+    <title>Crypto apps</title>
 </head>
+
 <body>
-    <h1>WELCOME TO HOMEPAGE!!!</h1>
-    <div>User Name: <span id="loggedUserName"></span></div>
-    <div>Email: <span id="loggedUserEmail"></span></div>
-    <button id="logout">Logout</button>
+        
+    <div class="apps-all-content">
+        <button id="logout" class="logout">Logout</button>
+        <div class="body-overlay">
+           
+        </div>
+        <!-- modal information -->
+        <div
+            class="modal-all-content">
+            
+
+
+        </div>
+
+        <!-- modal information -->
+
+        <div class="container">
+            <h2 class="titletext"><span
+                    class="title">Crypto</span>
+                Information</h2>
+            <div class="crypto-table ">
+                <div class="data-search">
+                    <input type="text" name=""
+                        class="text"
+                        id="" placeholder="Search now...">
+                    <button
+                        class="search">search</button>
+                </div>
+                <table class="table">
+                    <thead class="">
+                        <tr class="cells">
+                            <th class="p-3">Coin</th>
+                            <th class="p-3">Price</th>
+                            <th class="p-3">24h change</th>
+                            <th class="p-3">Market Cap</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tableBody">
+
+                    </tbody>
+
+                </table>
+                <div class="loading-effect" id="spinner">
+                    <i class='bx-loader'></i>
+                </div>
+                <h3 class="nodata" id="nodata">No data avilable</h3>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>
