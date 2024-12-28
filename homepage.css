@@ -1,91 +1,91 @@
 .apps-all-content {
-    width: 100%;               /* w-full */
-    min-height: 100vh;         /* min-h-screen */
-    background-color: black;   /* bg-black */
-    opacity: 0.95;             /* bg-opacity-95 */
-    padding-top: 5rem;         /* py-20 (top padding) */
-    padding-bottom: 5rem;      /* py-20 (bottom padding) */
+    width: 100%;           
+    min-height: 100vh;        
+    background-color: black;  
+    opacity: 0.95;            
+    padding-top: 5rem;        
+    padding-bottom: 5rem;      
 }
 .body-overlay {
-        transition: all 0.3s ease-in-out; /* Add transition duration for better effect */
-        display: none; /* Initially hidden */
+        transition: all 0.3s ease-in-out; 
+        display: none; 
         width: 100%;
         height: 100%;
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+        background-color: rgba(0, 0, 0, 0.6); 
         top: 0;
         left: 0;
       }
      
       .container {
-        max-width: 100%; /* Container max width */
+        max-width: 100%;
         margin-left: auto;
-        margin-right: auto; /* Centers the container horizontally (mx-auto) */
-        padding-left: 0.75rem; /* Padding on the left (px-3) */
-        padding-right: 0.75rem; /* Padding on the right (px-3) */
+        margin-right: auto; 
+        padding-left: 0.75rem; 
+        padding-right: 0.75rem; 
       }
       .titletext {
-        text-transform: capitalize; /* Capitalize text */
-        text-align: center; /* Center align text */
-        font-size: 1.875rem; /* Equivalent to text-3xl */
-        color: #6b7280; /* Equivalent to text-gray-500 */
-        margin-bottom: 2.5rem; /* Equivalent to mb-10 */
-        font-weight: bold; /* Equivalent to font-bold */
+        text-transform: capitalize; 
+        text-align: center; 
+        font-size: 1.875rem;
+        color: #6b7280; 
+        margin-bottom: 2.5rem; 
+        font-weight: bold; 
       }
       
       .title {
-        color: #facc15; /* Equivalent to text-yellow-400 */
+        color: #facc15; 
       }
       .data-search {
-        margin-bottom: 1.75rem; /* Equivalent to mb-7 */
-        display: flex; /* Equivalent to flex */
+        margin-bottom: 1.75rem; 
+        display: flex; 
         align-items: center;
       }
       
       .text {
-        max-width: 28rem; /* Equivalent to max-w-md */
-        padding: 1rem; /* Equivalent to p-4 */
-        color: #ffffff; /* Equivalent to text-white */
-        font-weight: 600; /* Equivalent to font-semibold */
-        border: none; /* Equivalent to border-none */
-        width: 100%; /* Equivalent to w-full */
-        height: 3rem; /* Equivalent to h-12 */
-        outline: none; /* Equivalent to outline-none */
-        background-color: #1a202c; /* Equivalent to bg-gray-900 */
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
-        border: 1px solid black; /* Equivalent to border-gray-400 */
+        max-width: 28rem; 
+        padding: 1rem; 
+        color: #ffffff; 
+        font-weight: 600;
+        border: none; 
+        width: 100%; 
+        height: 3rem; 
+        outline: none; 
+        background-color: #1a202c; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border: 1px solid black; 
       }
       
       .search {
-        width: 6rem; /* Equivalent to w-24 */
-        height: 3rem; /* Equivalent to h-12 */
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
-        background-color: #facc15; /* Equivalent to bg-yellow-400 */
-        color: #ffffff; /* Equivalent to text-white */
-        text-transform: capitalize; /* Equivalent to capitalize */
-        font-family: 'Georgia', serif; /* Equivalent to font-serif */
-        font-size: 1rem; /* Equivalent to text-md */
+        width: 6rem;
+        height: 3rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        background-color: #facc15;
+        color: #ffffff; 
+        text-transform: capitalize; 
+        font-family: 'Georgia', serif;
+        font-size: 1rem;
         border: 1px solid black;
       }
       .table {
-        border: none; /* Equivalent to border-none */
-        width: 100%; /* Equivalent to w-full */
-        color: #ffffff; /* Equivalent to text-white */
-        text-align: center; /* Equivalent to text-center */
+        border: none;
+        width: 100%; 
+        color: #ffffff; 
+        text-align: center; 
       }
       .cells {
-        box-shadow: 0 1px 2px rgba(55, 65, 81, 0.1); /* Equivalent to shadow-sm */
-        box-shadow: 0 1px 3px rgba(55, 65, 81, 0.7); /* Equivalent to shadow-gray-700 */
+        box-shadow: 0 1px 2px rgba(55, 65, 81, 0.1); 
+        box-shadow: 0 1px 3px rgba(55, 65, 81, 0.7);
       }
       .loading-effect {
-        text-align: center; /* Equivalent to text-center */
-        margin-top: 0.75rem; /* Equivalent to mt-3 */
+        text-align: center; 
+        margin-top: 0.75rem; 
       }
       
       .bx-loader {
-        animation: spin 1s linear infinite; /* Equivalent to animate-spin */
-        font-size: 2.25rem; /* Equivalent to text-4xl */
-        color: #f59e0b; /* Equivalent to text-yellow-500 */
+        animation: spin 1s linear infinite; 
+        font-size: 2.25rem; 
+        color: #f59e0b; 
       }
       
       @keyframes spin {
@@ -94,11 +94,11 @@
       }
       
       .nodata {
-        text-align: center; /* Equivalent to text-center */
-        font-size: 2.25rem; /* Equivalent to text-4xl */
-        color: #374151; /* Equivalent to text-gray-700 */
-        display: none; /* Equivalent to hidden */
-        margin-top: 1.25rem; /* Equivalent to mt-5 */
+        text-align: center; 
+        font-size: 2.25rem; 
+        color: #374151; 
+        display: none; 
+        margin-top: 1.25rem; 
       }
                        
 
@@ -108,21 +108,20 @@
     opacity: 0;
     pointer-events: none;
     transition: all .2s ease-in;
-    background-color: #1a202c; /* Equivalent to bg-gray-900 */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-sm */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-gray-900 */
-    max-width: 48rem; /* Equivalent to max-w-3xl */
-    color: #ffffff; /* Equivalent to text-white */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #1a202c; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    max-width: 48rem; 
+    color: #ffffff; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
     position: fixed;
     margin: auto;
-    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
-    inset: 3rem; /* Equivalent to inset-3 */
-    padding: 1.25rem; /* Equivalent to p-5 */
-    z-index: 30; /* Equivalent to z-30 */
-    border-radius: 0.375rem; /* Equivalent to rounded-md */
-}
+    -ms-overflow-style: none;  
+    inset: 3rem; 
+    padding: 1.25rem; 
+    z-index: 30; 
+    border-radius: 0.375rem; 
 
 .modal-all-content.active{
     transform: translateY(0px);
@@ -150,9 +149,9 @@
     text-align: right;
     font-weight: bold;
     top: 100%;
-    position: absolute; /* Position the button absolutely */
-    top: 1rem; /* Distance from the top of the page */
-    right: 1rem; /* Distance from the right of the page */
-    z-index: 1000; /* Ensures the button is on top of other elements */
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem; 
+    z-index: 1000; 
   }
 
