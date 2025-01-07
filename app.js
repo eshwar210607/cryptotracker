@@ -127,3 +127,5 @@ const closemodal = () => {
 };
 
 bodyOverlay.addEventListener('click', closemodal);
+
+
