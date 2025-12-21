@@ -41,17 +41,19 @@ const showData = (data) => {
         spinner.classList.add('hidden');
 
         data.forEach(val => {
-            const allprofit = val.price_change_percentage_24h.toFixed(2);
+            const allprofit = (val.price_change_percentage_24h || 0).toFixed(2);
+const marketcap = (val.market_cap || 0).toString().slice(0, -6);
 
-            let dataItem = `<tr onclick="moreInformation('${val.id}','${val.current_price}')" style="box-shadow: 0px 1px 3px rgba(107, 114, 128, 0.7); background-color: #1f2937; cursor: pointer;">
-                <td style="border: 1px solid #6b7280; padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-                    <img style="width: 3.5rem; padding-left: 0.75rem;" src="${val.image}"/>
-                    <p style="padding-left: 0.75rem; margin-top: 0.5rem;">${val.name}</p>
-                </td>
-                <td style="padding: 1rem; border: 1px solid #6b7280;">${val.current_price.toFixed(2)}$</td>
-                <td style="padding: 1rem; border: 1px solid #6b7280;">${allprofit > 0 ? `<span style="color: #059669;">${allprofit}%</span>` : `<span style="color: #dc2626;">${allprofit}%</span>`}</td>
-                <td style="padding: 1rem; border: 1px solid #6b7280;">${val.market_cap.toString().slice(0, -6)}M</td>
-            </tr>`;
+
+           let dataItem = `<tr  onclick="moreInformation('${val.id}','${val.current_price}')" class="shadow-sm shadow-gray-700 hover:bg-gray-900 cursor-pointer">
+    <td class=" border-gray-500 p-1 flex flex-col items-center ">
+    <img class="w-14 pl-3" src="${val.image}"/>
+    <p class="pl-3 mt-2">${val.name}</p>
+    </td>
+    <td class=" p-1 border-gray-500">${val.current_price.toFixed(2)}$</td>
+    <td class=" p-1 border-gray-500">${allprofit > 0 ? `<span class="text-green-700">${allprofit}%</span>` : `<span class="text-red-600">${allprofit}%</span>`}</td>
+    <td class=" p-1 border-gray-500">${marketcap}M</td>
+</tr>`;
             tableData.innerHTML += dataItem;
         });
     }
@@ -127,5 +129,6 @@ const closemodal = () => {
 };
 
 bodyOverlay.addEventListener('click', closemodal);
+
 
 
