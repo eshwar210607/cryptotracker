@@ -22,10 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         signOut(auth)
             .then(() => {
                 localStorage.removeItem('loggedInUserId');
-                window.location.href = 'http://127.0.0.1:5500/login_page.html';
+                window.location.href = 'login_page.html';
             })
             .catch((error) => {
                 console.error('Error signing out:', error);
             });
     });
 });
+
