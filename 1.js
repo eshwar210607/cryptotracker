@@ -41,7 +41,7 @@ const signIn=document.getElementById('submitlogin');
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='http://127.0.0.1:5500/home_page.html';
+        window.location.href='index.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
@@ -53,3 +53,4 @@ const signIn=document.getElementById('submitlogin');
         }
     })
  })
+
