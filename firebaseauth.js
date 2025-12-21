@@ -49,7 +49,7 @@ signUp.addEventListener('click',(event)=>{
     const docRef=doc(db, "users", user.uid);
     setDoc(docRef,userData)
     .then(()=>{
-      window.location.href='http://127.0.0.1:5500/login_page.html';
+      window.location.href='login_page.html';
     })
     .catch((error)=>{
       console.error("error writing document", error);
@@ -66,3 +66,4 @@ signUp.addEventListener('click',(event)=>{
     }
   })
 })
+
